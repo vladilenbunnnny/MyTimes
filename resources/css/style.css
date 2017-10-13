@@ -9,6 +9,10 @@ p {
   color: black;
 }
 
+div {
+  display: block;
+}
+
 
 /*
 ##########
@@ -25,6 +29,8 @@ header {
   width: 100%;
   height: 80px;
   z-index: 1;
+  position: fixed;
+  background-color: white;
 }
 
 .logo {
@@ -38,12 +44,13 @@ header {
 }
 
  header nav {
-   display: inline-block;
+   display: block;
  }
 
  .container {
    display: flex;
-   margin-top: 35px;
+   margin: 0 auto 78px auto;
+   padding-top: 116px;
  }
 
  /*
@@ -56,6 +63,7 @@ header {
    width: 630px;
    display: flex;
    flex-direction: column;
+   margin: 0 auto;
  }
 
 /*
@@ -85,14 +93,16 @@ header {
 
 .boxes {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 17px;
 
 }
 /*
 ######
-    Box
+    Box-1
 ######
 */
+
 
 /*
 ###
@@ -103,6 +113,8 @@ header {
 .under-image-article-1 {
   background-image: url(../images/img-story-2.png);
   height: 300px;
+  text-align: center;
+  margin-top: 15px;
 }
 
 .under-image-article-1 span {
@@ -115,9 +127,12 @@ header {
 
 /*
 ######
-    Box
+    Box-2
 ######
 */
+.box-2{
+  margin-left: 30px;
+  }
 
 /*
 ###
@@ -128,6 +143,7 @@ header {
 .under-image-article-2 {
   background-image: url(../images/img-story-3.png);
   height: 300px;
+  text-align: center;
 }
 
 .under-image-article-2 span {
@@ -152,11 +168,13 @@ header {
    width: 300px;
    display: flex;
    flex-direction: column;
+   margin-left: 32px;
  }
 
 .image-article {
   background-image: url(../images/img-story-1.png);
   height: 300px;
+  text-align: center;
 }
 
 .image-article span {
@@ -176,7 +194,27 @@ header {
   width: 240px;
   display: flex;
   flex-direction: column;
+  margin-left: 32px;
 }
+
+.news-bites h3{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.news-bites span {
+  display: block;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+  padding: 11px 20px;
+}
+
+
+
 
 
 /*
@@ -184,3 +222,31 @@ header {
          Footer
 ##########
 */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  flex-direction: column;
+  width: 100%;
+  height: 325px;
+
+}
+
+footer .info {
+  display: block;
+}
+
+footer .title {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  border-right: 2px solid white;
+  padding-right: 25px;
+}
